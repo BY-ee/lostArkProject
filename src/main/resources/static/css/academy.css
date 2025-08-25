@@ -9,7 +9,7 @@
 }
 
 /**
- *  AcademyList.html
+ *  AcademyDetail.html
  */
 .tag {
   background-color: #ccc;
@@ -22,6 +22,29 @@
 .title-detail {
   margin-left: 10px;
   font-size: 20px;
+}
+
+/* .reply-content-wrapper > .reply-meta > .reply-regdate::before {
+  content: 'ㆍ';
+} */
+
+.reply-content-wrapper:not(:last-child) {
+  padding-bottom: 15px;
+  border-bottom: 1px solid #888;
+}
+
+.reply-content-wrapper:not(:first-child) {
+  padding-top: 15px;
+}
+
+.reply-content-wrapper > .reply-content > p {
+  margin: 0px;
+}
+
+.reply-input-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 /**

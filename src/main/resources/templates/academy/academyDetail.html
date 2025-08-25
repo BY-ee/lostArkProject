@@ -38,7 +38,7 @@
 <div layout:fragment="content">
   <div class="container-fluid vh-100 pt-4 px-4">
     <div class="row justify-content-center">
-      <div class="col-10">
+      <div class="col-12">
         <div class="bg-secondary rounded h-100 p-5">
           <div class="d-flex justify-content-between">
             <div>
@@ -67,6 +67,50 @@
               삭제
             </button>
             <button class="btn btn-primary" type="button" id="navigate-list">목록</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 mt-4">
+        <div class="bg-secondary rounded h-100 p-4">
+          <div class="reply-container">
+            <div class="reply-content-container">
+              <div class="reply-content-wrapper">
+                <div class="reply-meta">
+                  <span class="reply-writer">작성자</span>
+                  <span>ㆍ</span>
+                  <span class="reply-regdate">2025.01.01</span>
+                </div>
+                <div class="reply-content mt-1">
+                  <p>댓글1 내용댓글1 내용댓글1 내용</p>
+                </div>
+              </div>
+              <div class="reply-content-wrapper">
+                <div class="reply-meta">
+                  <span class="reply-writer">작성자2</span>
+                  <span>ㆍ</span>
+                  <span class="reply-regdate">2025.01.02</span>
+                </div>
+                <div class="reply-content mt-1">
+                  <p>댓글1 내용댓글1 내용댓글1 내용 222222222</p>
+                </div>
+              </div>
+            </div>
+
+            <form id="reply-form">
+              <div class="reply-input-wrapper mt-4">
+                <span class="login-user">작성자2</span>
+
+                <div class="form-group">
+                  <label for="reply-form-content">Example textarea</label>
+                  <textarea class="form-control" id="reply-form-content"></textarea>
+                </div>
+                <!-- <div class="form-floating">
+                  <input type="text" class="form-control" id="reply-input" placeholder="" name="content" value="">
+                  <label for="reply-input">댓글 입력</label>
+                </div> -->
+              </div>
+            </form>
           </div>
         </div>
       </div>
