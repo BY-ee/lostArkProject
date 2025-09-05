@@ -20,6 +20,6 @@ public class ResetDatabaseEvent implements ApplicationListener<ApplicationReadyE
     public void onApplicationEvent(ApplicationReadyEvent event) {
         log.info("데이터베이스 초기화 작업을 시작합니다.");
         contentService.saveContents();
-        collectibleService.saveRecommendCollectible();
+        // collectibleService.saveRecommendCollectible();
     }
 }
